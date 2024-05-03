@@ -10,6 +10,7 @@ function init() {
   addVoices(synth, voiceSelect);
   selectVoice(voiceSelect);
   //talkButton(textBox, voiceSelect);
+  textArea(textBox, voiceSelect);
 }
 
 // DONE:
@@ -33,7 +34,24 @@ function addVoices(synth, voiceSelect) {
 function selectVoice(voiceSelect) {
   voiceSelect.addEventListener("change", function() {
     //console.log(this.value);
+
+
   });
+}
+
+function textArea(textBox, voiceSelect) {
+  textBox.addEventListener("input", function () {
+    textBox.textContent = this.value;
+    //console.log(textBox.textContent);
+    
+
+    let u = new SpeechSynthesisUtterance();
+    u.text = textBox.textContent;
+    u.lang = voiceSelect.value;
+    //u.voice = voiceSelect.value;
+
+    speechSynthesis.speak(u);
+  })
 }
 
 // TODO:
@@ -46,3 +64,14 @@ function talkButton(textBox, voiceSelect) {
     //console.log(selectedOption);
   });
 }
+
+/**
+ * TODO:
+ * 1. Textbox functionality works as intended - we need to link text from text box
+ * to the speech synthesis/voice/utterance?
+ * 
+ * 2. Button functionality - need to make it so pressing the button makes text-to-speech
+ * happen and that it reads out from the text box with the selected voice/accent
+ * 
+ * 3. Image functionality - needs to change when the text-to-speech is talking
+ */

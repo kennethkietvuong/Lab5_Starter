@@ -45,7 +45,7 @@ function volumeSlider (hornAudio) {
 
   volumeControl.addEventListener("input", function() {
     hornAudio.volume = this.value / 100;
-
+    
     if (this.value == 0) {
       volumeIcon.src = "/assets/icons/volume-level-0.svg";
     }
