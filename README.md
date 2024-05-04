@@ -10,4 +10,4 @@
     - Yes, we believe that this is possible to do. This is similar to the text box we have in the earlier section of the lab. We have a variable that stores the content that the user enters and we can simply chec the lenght of that sepcific variable. If the lenght is less than 80, we it is fine, if it is greater than 80, throw an error.
   
 
-[](https://kennethkietvuong.github.io/Lab5_Starter/)
+[https://kennethkietvuong.github.io/Lab5_Starter/](https://kennethkietvuong.github.io/Lab5_Starter/)
