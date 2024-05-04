@@ -11,3 +11,7 @@
   
 
 [https://kennethkietvuong.github.io/Lab5_Starter/](https://kennethkietvuong.github.io/Lab5_Starter/)
+
+Click [here](https://kennethkietvuong.github.io/Lab5_Starter/expose.html) for expose.js
+
+Click [here](https://kennethkietvuong.github.io/Lab5_Starter/explore.html) for explore.js
