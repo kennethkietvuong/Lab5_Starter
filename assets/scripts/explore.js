@@ -59,10 +59,10 @@ function imageSpeak(synth, utterThis) {
   const imageSmile = document.querySelector("img");
 
   utterThis.addEventListener("start", (event) => {
-    imageSmile.src = "/assets/images/smiling-open.png";
+    imageSmile.src = "assets/images/smiling-open.png";
   });
 
   utterThis.addEventListener("end", (event) => {
-    imageSmile.src = "/assets/images/smiling.png";
+    imageSmile.src = "assets/images/smiling.png";
   });
 }
