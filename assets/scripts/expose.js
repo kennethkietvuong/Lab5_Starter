@@ -16,10 +16,10 @@ function init() {
 function selectHorn(hornSelect, hornImage, hornAudio) {
   hornSelect.addEventListener("change", function() {
     let newImage = this.value + ".svg";
-    hornImage.src = "/assets/images/" + newImage;
+    hornImage.src = "assets/images/" + newImage;
 
     let newAudio = this.value + ".mp3";
-    hornAudio.src = "/assets/audio/" + newAudio;
+    hornAudio.src = "assets/audio/" + newAudio;
   });
 }
 
@@ -47,16 +47,16 @@ function volumeSlider (hornAudio) {
     hornAudio.volume = this.value / 100;
     
     if (this.value == 0) {
-      volumeIcon.src = "/assets/icons/volume-level-0.svg";
+      volumeIcon.src = "assets/icons/volume-level-0.svg";
     }
     else if ((this.value >= 1) && (this.value < 33)) {
-      volumeIcon.src = "/assets/icons/volume-level-1.svg";
+      volumeIcon.src = "assets/icons/volume-level-1.svg";
     }
     else if ((this.value >= 33) && (this.value < 67) ) {
-      volumeIcon.src = "/assets/icons/volume-level-2.svg";
+      volumeIcon.src = "assets/icons/volume-level-2.svg";
     }
     else {
-      volumeIcon.src = "/assets/icons/volume-level-3.svg";
+      volumeIcon.src = "assets/icons/volume-level-3.svg";
     }
   });
 }
