@@ -57,7 +57,6 @@ function talkButton(synth, textBox, voiceSelect) {
 // DONE:
 function imageSpeak(synth, utterThis) {
   const imageSmile = document.querySelector("img");
-  const isSpeaking = synth.speaking;
 
   utterThis.addEventListener("start", (event) => {
     imageSmile.src = "/assets/images/smiling-open.png";
