@@ -16,12 +16,10 @@ function init() {
 function selectHorn(hornSelect, hornImage, hornAudio) {
   hornSelect.addEventListener("change", function() {
     let newImage = this.value + ".svg";
-    //hornImage.src = "assets/images/" + newImage;
-    hornImage.src = `assets/images/${newImage}`;
+    hornImage.src = "assets/images/" + newImage;
 
     let newAudio = this.value + ".mp3";
-    //hornAudio.src = "assets/audio/" + newAudio;
-    hornImage.src = `assets/images/${newAudio}`;
+    hornAudio.src = "assets/audio/" + newAudio;
 
   });
 }
